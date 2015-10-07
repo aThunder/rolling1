@@ -33,7 +33,7 @@ print('Start Time: ',timeStamp)
 print()
 
 for i in range(2,13):
-   a = DiceTwo(1000000,1,i)
+   a = DiceTwo(1000,1,i)
    print(a)
 
 print()
