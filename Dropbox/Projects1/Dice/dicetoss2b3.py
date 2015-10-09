@@ -24,9 +24,8 @@ class DiceTwo():
 
    def __str__(self):
       #print('Total No. of Tests: ', self.counter)
-      #print('Probability of {0}: {1}'.format(self.rollTotal, self.ratio1))
       return 'Probability of rolling {0}: {1}'.format(self.rollTotal, self.ratio1)
-      #return 'Total times {0} resulted in all tests: {1}'.format(self.rollTotal, self.occurence)
+      return 'Total times {0} resulted in all tests: {1}'.format(self.rollTotal, self.occurence)
 
 timeStamp = str(datetime.datetime.now())
 print('Start Time: ',timeStamp)
