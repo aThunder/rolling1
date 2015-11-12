@@ -14,14 +14,12 @@ def calculate(rounds):
     selected = []
 
     for draw in range(3):
-        # print(bucket)
         counter = 0
         pick = draw_ball(bucket)
         selected.append(pick)
 
         for j in bucket:
          if j == pick:
-            # print("hello", j)
             del bucket[counter]
             break
          counter += 1
@@ -30,15 +28,12 @@ def calculate(rounds):
     # print("selected: ",selected)
 
     if selected[0] == selected[1] == selected[2]:
-        # print("yes")
         match += 1
-        # print(match)
 
   print('matches: ',match)
   print('rounds: ',rounds)
   fraction = match/rounds
   print("fraction of matches: ", fraction)
 
-
-calculate(4200000)
+calculate(200000)
 
