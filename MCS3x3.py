@@ -3,8 +3,6 @@ import random
 
 def draw_ball(bucket):
     pick = (random.choice(bucket))
-    # print(pick)
-    # print(bucket)
     return pick
 
 def calculate(rounds):
@@ -15,11 +13,11 @@ def calculate(rounds):
 
     for draw in range(3):
         counter = 0
-        pick = draw_ball(bucket)
-        selected.append(pick)
+        picked = draw_ball(bucket)
+        selected.append(picked)
 
         for j in bucket:
-         if j == pick:
+         if j == picked:
             del bucket[counter]
             break
          counter += 1
