@@ -22,16 +22,12 @@ def calculate(rounds):
             break
          counter += 1
 
-    # print("bucket: ", bucket)
-    # print("selected: ",selected)
-
     if selected[0] == selected[1] == selected[2]:
         match += 1
 
   print('matches: ',match)
   print('rounds: ',rounds)
-  fraction = match/rounds
-  print("fraction of matches: ", fraction)
+  print("fraction of matches: ", (match/rounds))
 
 calculate(200000)
 
