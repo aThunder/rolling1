@@ -1,11 +1,14 @@
 
 import random
+import datetime
+import time
 
 def draw_ball(bucket):
     pick = (random.choice(bucket))
     return pick
 
 def calculate(rounds):
+  begin = str(datetime.datetime.now()).split('.')[0]
   match = 0
   for round in range(rounds):
     bucket = ['red','red','red','blue','blue','blue']
@@ -28,6 +31,9 @@ def calculate(rounds):
   print('matches: ',match)
   print('rounds: ',rounds)
   print("fraction of matches: ", (match/rounds))
+  end = str(datetime.datetime.now()).split('.')[0]
+  print(begin)
+  print(end)
 
-calculate(200000)
+calculate(2000000)
 
