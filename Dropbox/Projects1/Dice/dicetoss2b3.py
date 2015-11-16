@@ -11,10 +11,7 @@ class DiceTwo():
       self.rollTotal = rollTotal
                  
       for i in range(self.rounds):
-##        dice1 = self.rollDice()
-##        dice2 = self.rollDice()
         self.counter += 1
-##        if dice1 + dice2 == rollTotal:
         if self.rollDice() + self.rollDice() == rollTotal:
           self.occurence += 1
       self.ratio1 = self.occurence/self.counter
