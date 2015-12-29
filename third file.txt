@@ -1,0 +1,5 @@
+third file
+
+changed directly to remote master (pulled from remote)
+
+Then pushed from local to remote
